@@ -1,4 +1,25 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: system-ui;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.logo-hero {
+    color: aquamarine;
+    background-color: cadetblue;
+    background-image: url(coffee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: difference;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: left; /* do I need this, or just move the div */
 }
