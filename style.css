@@ -4,28 +4,49 @@
     font-family: system-ui;
 }
 
+@font-face {
+    font-family: 'archdaughterfont';
+    src: url(ArchitectsDaughter-Regular.ttf);
+}
+
 body {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     outline: 2px solid black;
     height: 100vh;
     width: 25vw;
-    color: aquamarine;
+    color: rgb(88, 32, 6);
     background-color: cadetblue;
     background-image: url(coffee.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: difference;
+    background-blend-mode: luminosity;
     /* padding-top: 200px;
     padding-bottom: 200px; */
     background-position: left; /* do I need this, or just move the div */
 }
+
+.logo-title {
+    font-family: 'archdaughterfont', system-ui;
+    height: auto;
+    position: relative;
+    top: 40vh;
+    padding: 10px 0;
+    background-color: rgba(122, 178, 178, 0.6);
+}
+
+/* #logo-footer {
+    align-self: end;
+} */
 
 .form-header {
     outline: 2px solid black;
