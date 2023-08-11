@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Left Side -->
+    <div class="left">
         <div class="logo-container">
             <div class="logo">
                 <img class="logo-image" src="coffee-maker.svg" alt="coffee-maker">
@@ -17,26 +19,47 @@
                 Photo by Christiana Rumpf via unsplash.com
             </div> <!-- Tried p and span as well, not sure what is best practice--> 
         </div>
-    
+    </div>
+
+    <!-- Right Side -->
+    <div class="right">
         <div class="form-header">
             <h1>DIYCoffee</h1>
             <p>This is not a real online service, but you know you need this in your life.</p>
         </div>
     
-        <form action="" class="form">
-            <div class="form-row"></div>
-            <div class="form-row"></div>
-            <div class="form-row"></div>
-            <div class="form-row"></div>
-            <div class="form-row"></div>
-            <div class="form-row"></div>
+        <form action="" method="get" class="form">
+            <div class="form-row">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name">
+            </div>
+            <div class="form-row">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="joe@example.com">
+            </div>
+            <div class="form-row">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+            <div class="form-row">
+                <label for="pass">Password (minimum 8 characters)</label>
+                <input type="password" name="password" id="pass" minlength="8" pattern="" required>
+            </div>
+            <div class="form-row">
+                <label for="confirm">Confirm Password</label>
+                <input type="password" name="confirm password" id="confirm" minlength="8" pattern="" required>
+            </div>
         </form>
     
         <div class="submit-div">
             <button type="submit">Submit</button>
             <h2 class="login"></h2>
         </div>
-    
+    </div>
 
     <script src="signup.js"></script>
 </body>

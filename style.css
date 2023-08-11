@@ -6,15 +6,23 @@
 }
 
 @font-face {
-    font-family: 'archdaughterfont';
+    font-family: 'adFont';
     src: url(ArchitectsDaughter-Regular.ttf);
 }
 
 body {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+
+.left {
+    outline: 2px solid black;
+}
+
+.right {
+    outline: 2px solid black;
 }
 
 .logo-container {
@@ -44,7 +52,7 @@ body {
 }
 
 .logo-title {
-    font-family: 'archdaughterfont', system-ui;
+    font-family: 'adFont', system-ui;
     padding: 10px 0;
     flex-wrap: wrap;
 }
@@ -59,22 +67,32 @@ body {
 .form-header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     outline: 2px solid black;
-    height: 33vh;
+    height: 25vh;
     width: 75vw;
 }
 
 .form-header h1, p {
-    font-size: 8px;
-    font-family: 'archdaughterfont', system-ui;
+    font-size: 20px;
+    font-family: 'adFont', system-ui;
+    padding-left: 5%;
 }
 
 .form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     outline: 2px solid black;
+    height: 50vh;
+    width: 75vw;
 }
 
 .submit-div {
     outline: 2px solid black;
+    height: 25vh;
+    width: 75vw;
 }
 
 /* @media (max-width: 700px) {
